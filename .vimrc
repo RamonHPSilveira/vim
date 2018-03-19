@@ -21,6 +21,7 @@ set smartcase	"When use uppercase it will not ignorecase froms search
 set lbr 	"no break words when line ends
 set ai		"auto indent
 set si		"smart ident
+set scrolloff=10 "number of lines on edges
 
 "set bg=dark
 "set bg=light
