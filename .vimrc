@@ -53,10 +53,15 @@ inoremap jk <esc>
 imap <F3> app.post('', require('../middlewares/auth'), function(req, res){<Enter>}); 
 imap <F2> app.get('', require('../middlewares/auth'), function(req, res){<Enter>});
 imap <F4> app.put('', require('../middlewares/auth'), function(req, res){<Enter>});
+imap <F5> try{<Enter>}catch(err){<Enter>}
+imap <leader>t <Esc>f)a.then(function(data){<Enter>}).catch(function (err){<Enter>});<Esc>kO
+imap <leader>T <Esc>f)a.then((data) => {<Enter>}).catch((err) => {<Enter>});<Esc>kO
+imap <leader>c console.log();<Esc>F(a"
+imap <leader>p <Esc>pa
 
 "######################################
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
 
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**;node_modules/**"
 
@@ -166,4 +171,3 @@ colorscheme Benokai
 "color dracula
 "colorscheme darkest-space
 syntax on
-
